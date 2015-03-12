@@ -13,7 +13,7 @@ int main ( int argc, char *argv[] ) {
   while (1) {
     input = readline("bit-repl> ");
 
-    if (strcmp(input, "exit") == 0 || strcmp(input, "quit") == 0) {
+    if (!strcmp(input, "exit") || !strcmp(input, "quit")) {
       printf("\nThanks for using Bit REPL :)\nClosing...\n");
       free(input);
       exit(1);
