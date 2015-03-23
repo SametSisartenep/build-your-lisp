@@ -22,7 +22,8 @@ char* readline ( char *prompt ) {
 void add_history ( char *unused ) {}
 
 #else
-#include <editline.h>
+#include <readline/readline.h>
+#include <readline/history.h>
 #endif
 
 int main ( int argc, char *argv[] ) {

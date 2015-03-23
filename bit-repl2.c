@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#include <editline.h>
+#include <readline/readline.h>
+#include <readline/history.h>
 
 int main ( int argc, char *argv[] ) {
 
